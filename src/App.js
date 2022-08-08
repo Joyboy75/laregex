@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Maison from './Components/Maison/Maison'
+import NavBar from './Components/NavBar'
+import Person from './Components/Person/Person'
+import Player from './Components/Player/Player'
+import Voiture from './Components/Voiture/Voiture'
+import Animal from './Components/Animal/Animal'
+import Machine from './Components/Machine a sous/Machine'
+import Counter from './Components/Counter'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="audi">
+        <Voiture />
+      </div>
+
+      <div className="main">
+        <div className="nav">
+          <NavBar />
+        </div>
+
+        <div>
+          <h1>Hello World !</h1>
+
+          <Person />
+
+          <Player />
+
+          <Maison />
+
+          <Animal bete="Singe" />
+          {/* <Animal bete="Lion" /> */}
+          {/* <Animal bete="Aigle" />
+          <Animal bete="Cheval" /> */}
+
+          <h1>Machines à sous!</h1>
+          <Machine s1="🍒" s2="🍒" s3="🍒" />
+          <Machine s1="🍇" s2="🍒" s3="🍊" />
+
+          <hr></hr>
+          <Counter />
+
+          <hr></hr>
+
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
