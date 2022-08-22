@@ -13,11 +13,9 @@ export const Header = () => {
         <h5 className="text-light">Fullstack Développeur</h5>
         <CTA />
         <HeaderSocials />
-
         <div className="me">
           <img src={ME} alt="me" />
         </div>
-
         <a href="#contact" className="scroll__down">
           {' '}
           Défiler vers le bas{' '}
